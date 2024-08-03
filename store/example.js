@@ -4,7 +4,7 @@ import { defineStore } from 'pinia';
 
 export const useExampleStore = defineStore('example', {
       state: () => ({
-        projectsHeading: "Projects Portfolio",
+        projectsHeading: "Zrealizowane projekty",
         projectsDescription: "Some of the projects I have successfully completed",
         projects: [
           {
@@ -51,6 +51,30 @@ export const useExampleStore = defineStore('example', {
             id: "260d1271-f1f2-4bc9-a5eb-05a89c8ccc99",
             title: "Cloud Storage Platform",
             category: "UI/UX Design",
+            img: "/_nuxt/static/images/ui-project-2.jpg",
+            tag: "Web / Frontend",
+            objectivesDetails:
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+            techTitle: "Tools & Technologies",
+            projectImages: [],
+            projectDetails: [],
+          },
+          {
+            id: "260d1271-f1f2-4bc9-a5eb-05a89c8ccc99",
+            title: "Cloud Storage Platform",
+            category: "sypialnia",
+            img: "/_nuxt/static/images/ui-project-2.jpg",
+            tag: "Web / Frontend",
+            objectivesDetails:
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+            techTitle: "Tools & Technologies",
+            projectImages: [],
+            projectDetails: [],
+          },
+          {
+            id: "260d1271-f1f2-4bc9-a5eb-05a89c8ccc99",
+            title: "Cloud Storage Platform",
+            category: "łazienka",
             img: "/_nuxt/static/images/ui-project-2.jpg",
             tag: "Web / Frontend",
             objectivesDetails:

@@ -1,12 +1,10 @@
 <script>
 import { mapState } from 'pinia'
 import { useExampleStore } from '@/store/example.js';
-import HireMeModal from "../HireMeModal.vue";
 import AppNavigation from "./AppNavigation.vue";
 
 export default {
   components: {
-    HireMeModal,
     AppNavigation,
   },
   data: () => {
@@ -96,35 +94,8 @@ export default {
       <div
     
       >
-        <!-- Hire me button -->
-        <div class="font-general-medium hidden md:block">
-          <button
-            class="
-              text-md
-              bg-indigo-500
-              hover:bg-indigo-600
-              text-white
-              shadow-sm
-              rounded-md
-              px-5
-              py-2.5
-            "
-            @click="showModal()"
-            aria-label="Hire Me Button"
-          >
-            Hire Me
-          </button>
-        </div>
       </div>
     </div>
-
-    <!-- Hire me modal -->
-    <HireMeModal
-      :showModal="showModal"
-      :modal="modal"
-      :categories="categories"
-      aria-modal="Hire Me Modal"
-    />
   </div>
   </nav>
 </template>
