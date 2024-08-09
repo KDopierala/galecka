@@ -13,13 +13,15 @@
     <div class="flex flex-col-reverse md:flex-row md:py-10 md:mt-20 relative">
       
       <!-- Circle with "LUB" -->
-      <div class="absolute 
+      <div class="
+      hidden
+      absolute 
       left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 
       bg-zinc-800 text-white 
       rounded-full 
       h-32 w-32 
       border-2 border-white
-      flex items-center justify-center 
+      md:flex items-center justify-center 
       text-3xl font-bold 
       z-10"
            >
@@ -46,11 +48,13 @@ export default {
           id: 1,
           name: "INSTAGRAM",
           icon: "instagram",
+          url: "https://www.instagram.com/twojprofil",  // Dodaj adres URL
         },
         {
           id: 2,
           name: "FACEBOOK",
           icon: "facebook",
+          url: "https://www.facebook.com/twojprofil",  // Dodaj adres URL
         },
         {
           id: 3,
@@ -72,4 +76,5 @@ export default {
     feather.replace();
   },
 };
+
 </script>

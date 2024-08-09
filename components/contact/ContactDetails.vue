@@ -1,11 +1,12 @@
 <template>
   <div class="w-full md:w-1/2 flex justify-center items-center">
     <div class="text-right max-w-xl w-full px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-full p-4">
+      <div class="grid grid-cols-2 gap-4 h-full p-4">
         <div
           v-for="(contact, index) in contacts"
           :key="contact.id"
           class="relative w-full pt-full group cursor-pointer transition duration-300 ease-in-out transform hover:bg-gray-700"
+          @click.prevent="handleClick(contact)"
           @mouseover="contact.showNumber = false"
           @mouseleave="contact.showNumber = true"
         >
@@ -20,9 +21,8 @@
                     : 'lg:text-3xl'
                 "
                 aria-label="Website and Phone"
-                @click.prevent="contact.icon === 'mail' ? copyToClipboard(contact.name) : null"
               >
-                {{ contact.showNumber && contact.icon === 'phone' ? contact.number : contact.name }}
+                {{ contact.showNumber && contact.icon === 'phone' ? contact.name : contact.name }}
               </a>
               <i
                 :data-feather="contact.icon"
@@ -40,9 +40,16 @@
 export default {
   props: ["contacts"],
   methods: {
+    handleClick(contact) {
+      if (contact.url) {
+        window.location.href = contact.url; // Przekierowanie do profilu
+      } else {
+        this.copyToClipboard(contact.name); // Kopiowanie numeru lub maila
+      }
+    },
     copyToClipboard(text) {
       navigator.clipboard.writeText(text).then(() => {
-        alert("Skopiowano adres galeckadesign@gmail.com do schowka!");
+        alert(`Skopiowano ${text} do schowka!`);
       }).catch(err => {
         console.error("Failed to copy: ", err);
       });
@@ -50,6 +57,8 @@ export default {
   }
 };
 </script>
+
+
 
 <style scoped>
 .pt-full {

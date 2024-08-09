@@ -26,16 +26,6 @@ export default {
         border-2
       "
     >
-      <p
-        class="
-          font-general-medium
-text-white
-          text-2xl
-          mb-8
-        "
-      >
-        Formularz
-      </p>
       <form
         @submit="
           (e) => {
@@ -44,37 +34,8 @@ text-white
         "
         class="font-general-regular space-y-7"
       >
+
         <div class="">
-          <label
-            class="block text-lg text-white mb-2"
-            for="name"
-            >Pełne Imię</label
-          >
-          <input
-            class="
-              w-full
-              px-5
-              py-2
-              border border-gray-300
-              dark:border-primary-dark
-              border-opacity-50
-              text-primary-dark
-              dark:text-secondary-light
-              bg-secondary-light
-              dark:bg-secondary-dark
-              rounded-md
-              shadow-sm
-              text-md
-            "
-            id="name"
-            name="name"
-            type="text"
-            required=""
-            placeholder="Twoje Imię"
-            aria-label="Name"
-          />
-        </div>
-        <div class="mt-6">
           <label
             class="block text-lg text-white mb-2"
             for="email"
