@@ -12,46 +12,103 @@ export default {
     selectOptions: {
       type: Array,
       default: () => [
-        "Web Application",
-        "Mobile Application",
-        "UI/UX Design",
-        "Branding & Anim",
+        "wszystkie",
+        "kuchnia",
+        "gabinet",
+        "dom",
+        "łazienka",
+        "korytarz",
       ],
+    },
+  },
+  data() {
+    return {
+      showOptions: false,
+      selectedOption: "wszystkie",
+    };
+  },
+  computed: {
+    filteredOptions() {
+      return this.selectOptions.filter(option => option !== this.selectedOption);
+    },
+  },
+  methods: {
+    toggleOptions() {
+      this.showOptions = !this.showOptions;
+    },
+    selectOption(option) {
+      this.selectedOption = option;
+      this.showOptions = false;
+      this.$emit('dropChange', option === "wszystkie" ? "" : option);
     },
   },
 };
 </script>
 
+
 <template>
-  <select
-    @change="$emit('dropChange', $event.target.value)"
-    :name="select"
-    :id="select"
-    class="
-      font-general-medium
-      px-4
-      py-2
-      border-1 border-gray-200
-      dark:border-secondary-dark
-      rounded-lg
-      text-sm
-      sm:text-md
-      bg-secondary-light
-      dark:bg-ternary-dark
-      text-primary-dark
-      dark:text-ternary-light
-    "
-  >
-    <option value class="text-sm sm:text-md">All Projects</option>
-    <option
-      v-for="option in selectOptions"
-      :key="option"
-      :value="option"
-      class="sm:text-md"
-    >
-      {{ option }}
-    </option>
-  </select>
+  <div class="filter-container">
+    <button @click="toggleOptions" class="filter-option main-option bg-gradient">
+      {{ selectedOption }}
+    </button>
+    <div v-if="showOptions" class="options-container">
+      <button
+        v-for="option in filteredOptions"
+        :key="option"
+        @click="selectOption(option)"
+        class="filter-option bg-gradient"
+      >
+        {{ option }}
+      </button>
+    </div>
+  </div>
 </template>
 
-<style lang="scss" scoped></style>
+
+<style lang="scss" scoped>
+.filter-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.filter-option {
+  font-family: 'General Medium', sans-serif;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #27272A;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  margin-right: 1rem; /* Dodatkowy odstęp między opcjami */
+}
+
+.filter-option:hover {
+  border: 2px solid white;
+}
+
+.main-option {
+  z-index: 1; /* Zapewnij, że główny przycisk jest na wierzchu */
+}
+
+.options-container {
+  display: flex;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: slideIn 0.3s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
+

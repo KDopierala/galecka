@@ -29,13 +29,12 @@ export default {
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
             class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
         </div>
-        <h5 class="mb-2 text-lg font-bold">Maria Smantha</h5>
+        <h5 class="mb-2 text-lg font-bold">Pan Wojciech</h5>
         <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-          Web Developer
+          Projekt domu
         </h6>
         <p class="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
-          id officiis hic tenetur quae quaerat ad velit ab hic.
+          Bardzo polecam współpracę z Panią Mileną. Czuliśmy się zaopiekowani na każdym kroku, doradziła Nam wiele rozwiązań o których nawet nie pomyśleliśmy.
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
             <path fill="currentColor"
               d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
@@ -79,13 +78,12 @@ export default {
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
             class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
         </div>
-        <h5 class="mb-2 text-lg font-bold">Lisa Cudrow</h5>
+        <h5 class="mb-2 text-lg font-bold">Pani Iwona</h5>
         <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-          Graphic Designer
+          Projekt sypialnii
         </h6>
         <p class="mb-4">
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam
-          corporis suscipit laboriosam, nisi ut aliquid commodi.
+          Projekt sypialni jest absolutnie zachwycający! Wszystko zostało przemyślane do najdrobniejszego szczegółu, a efekt końcowy przerósł nasze najśmielsze oczekiwania.
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
             <path fill="currentColor"
               d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
@@ -129,13 +127,12 @@ export default {
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
             class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
         </div>
-        <h5 class="mb-2 text-lg font-bold">John Smith</h5>
+        <h5 class="mb-2 text-lg font-bold">Pan Tomasz</h5>
         <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-          Marketing Specialist
+          Projekt gabinetu
         </h6>
         <p class="mb-4">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti.
+          Wspaniły projekt, doskonale przemyślane rozwiązania, które sprawiają, że gabinet jest zarówno funkcjonalny, jak i przytulny. Polecam!
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
             <path fill="currentColor"
               d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />

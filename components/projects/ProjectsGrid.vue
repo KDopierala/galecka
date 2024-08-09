@@ -24,9 +24,7 @@ export default {
   methods: {
     filterProjectsByCategory() {
       return this.projects.filter((item) => {
-        let category =
-          item.category.charAt(0).toUpperCase() + item.category.slice(1);
-        return category.includes(this.selectedProject);
+        return item.category === this.selectedProject;
       });
     },
     filterProjectsBySearch() {
@@ -42,6 +40,7 @@ export default {
   },
 };
 </script>
+
 
 <template>
   <div class="pt-10 sm:pt-20 md:pt-24">
