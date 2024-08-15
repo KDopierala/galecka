@@ -37,10 +37,10 @@ export default {
 </script>
 
 <template>
-  <nav id="nav" class="z-50 bg-gradient-to-b from-zinc-800 to-transparent">
+  <nav id="nav" class="z-50 sm:bg-gradient-to-b from-zinc-800 to-transparent">
     <div class="sm:container sm:mx-auto">
       <!-- Header -->
-      <div class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
+      <div class="relative z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
         <!-- Header menu links and small screen hamburger menu -->
         <div class="flex justify-between items-center px-6 sm:px-0">
           <!-- Header logos -->
@@ -54,11 +54,15 @@ export default {
           <div class="sm:hidden">
             <button
               @click="toggleMenu"
-              class="text-primary-light focus:outline-none"
+              :class="{'translate-y-[160px] bg-gradient border-2 border-white rounded-full': isOpen, 'translate-x-0': !isOpen}"
+              class="text-primary-light focus:outline-none transform transition-transform duration-300"
               aria-label="Toggle menu"
             >
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg v-if="!isOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+              <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             </button>
           </div>
@@ -75,3 +79,19 @@ export default {
     </div>
   </nav>
 </template>
+
+<style>
+/* CSS for animating the icons */
+button svg {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+button svg.v-enter-active, button svg.v-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+button svg.v-enter-from, button svg.v-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
+</style>
