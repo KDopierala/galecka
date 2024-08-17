@@ -8,7 +8,7 @@
       "
   >
     <h2 class="my-12 text-3xl font-bold text-center">Skontaktuj się ze mną!</h2>
-    <p class="text-center text-lg">Napisz do mnie na instagramie lub facebooku!<br> Wyślij maila lub bezpośrednio zadzwoń. Możesz też skorzystać z poniższego forumlarza kontaktowego</p>
+    <p class="text-center text-lg">Napisz do mnie na instagramie lub facebooku!<br> Kliknij ikonę słuchawki lub listu aby skopiować numer telefonu oraz adres email. Możesz też skorzystać z poniższego forumlarza kontaktowego</p>
     <!-- Contact form -->
     <div class="flex flex-col-reverse md:flex-row md:py-10 md:mt-20 relative">
       

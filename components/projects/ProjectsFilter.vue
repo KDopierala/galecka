@@ -45,25 +45,25 @@ export default {
 };
 </script>
 
-
 <template>
   <div class="filter-container">
-    <button @click="toggleOptions" class="filter-option main-option bg-gradient">
-      {{ selectedOption }}
-    </button>
-    <div v-if="showOptions" class="options-container">
-      <button
-        v-for="option in filteredOptions"
-        :key="option"
-        @click="selectOption(option)"
-        class="filter-option bg-gradient"
-      >
-        {{ option }}
+    <div class="options-container">
+      <button @click="toggleOptions" class="filter-option main-option bg-gradient">
+        {{ selectedOption }}
       </button>
+      <div v-if="showOptions" class="dropdown-options">
+        <button
+          v-for="option in filteredOptions"
+          :key="option"
+          @click="selectOption(option)"
+          class="filter-option bg-gradient"
+        >
+          {{ option }}
+        </button>
+      </div>
     </div>
   </div>
 </template>
-
 
 <style lang="scss" scoped>
 .filter-container {
@@ -84,6 +84,7 @@ export default {
   cursor: pointer;
   transition: transform 0.3s ease, background 0.3s ease;
   margin-right: 1rem; /* Dodatkowy odstęp między opcjami */
+  display: inline-block; /* Dodano, aby opcje były obok siebie */
 }
 
 .filter-option:hover {
@@ -95,6 +96,11 @@ export default {
 }
 
 .options-container {
+  display: flex;
+  white-space: nowrap; /* Zapobiega łamaniu linii */
+}
+
+.dropdown-options {
   display: flex;
   position: absolute;
   left: 100%;
@@ -110,5 +116,31 @@ export default {
     transform: translateX(0);
   }
 }
-</style>
 
+@media (max-width: 768px) {
+  .filter-container {
+    overflow-x: auto; /* Dodano przewijanie w poziomie */
+    white-space: nowrap; /* Zapobiega łamaniu linii */
+  }
+
+  .options-container {
+    overflow-x: auto; /* Dodano przewijanie w poziomie dla opcji */
+  }
+
+  .dropdown-options {
+    position: static;
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .filter-option {
+    margin-bottom: 10px; /* Dodano odstęp poniżej opcji w mobilnym */
+    margin-right: 10px; /* Dodano odstęp między opcjami w mobilnym */
+  }
+
+  .main-option {
+    margin-bottom: 10px; /* Dodano odstęp poniżej głównej opcji w mobilnym */
+  }
+}
+</style>

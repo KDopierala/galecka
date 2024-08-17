@@ -10,7 +10,7 @@
           @mouseover="contact.showNumber = false"
           @mouseleave="contact.showNumber = true"
         >
-          <div class="absolute inset-0 flex flex-col justify-center items-center p-4 border rounded-lg">
+          <div class="absolute inset-0 flex flex-col justify-center items-center p-4 border-2 rounded-lg">
             <div class="flex items-center justify-center w-full relative">
               <a
                 href="#"
@@ -26,7 +26,17 @@
               </a>
               <i
                 :data-feather="contact.icon"
-                class="text-white feather-icon-size absolute transition-opacity duration-300 group-hover:opacity-0"
+                class="text-white w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] absolute transition-opacity duration-300 group-hover:opacity-0"
+              ></i>
+              <i 
+                v-if="contact.icon === 'phone' || contact.icon === 'mail'"
+                data-feather="copy" 
+                class="block sm:hidden w-[25px] h-[25px] absolute top-[-60px] right-0"
+              ></i>
+              <i 
+                v-if="contact.icon === 'phone' || contact.icon === 'mail'"
+                data-feather="copy" 
+                class="hidden sm:block w-[40px] h-[40px] absolute top-[-100px] right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               ></i>
             </div>
           </div>
@@ -58,14 +68,8 @@ export default {
 };
 </script>
 
-
-
 <style scoped>
 .pt-full {
   padding-top: 100%;
-}
-.feather-icon-size {
-  width: 80px;
-  height: 80px;
 }
 </style>
