@@ -3,7 +3,7 @@
     <!-- Kafelek 1 -->
     <div class="flex flex-col items-center p-4 bg-none rounded-lg shadow-md">
       <div class="text-4xl text-gray-500 mb-2">
-          <img class="invert" src="/_nuxt/static/offerIcons/furniture.webp"></img>
+          <img class="invert" src="/static/offerIcons/furniture.webp"></img>
       </div>
       <div class="text-lg font-semibold text-white">PROJEKTOWANIE WNĘTRZ</div>
     </div>
@@ -12,7 +12,7 @@
     <!-- Kafelek 2 -->
     <div class="flex flex-col items-center p-4 bg-none rounded-lg shadow-md">
       <div class="text-4xl text-gray-500 mb-2">
-        <img class="invert" src="/_nuxt/static/offerIcons/furniture.webp"></img>
+        <img class="invert" src="/static/offerIcons/furniture.webp"></img>
       </div>
       <div class="text-lg font-semibold text-white">PROJEKTOWANIE MEBLI NA WYMIAR</div>
     </div>
@@ -21,7 +21,7 @@
     <div class="flex flex-col items-center p-4 bg-none rounded-lg shadow-md">
       <div class="text-4xl text-gray-500 mb-2">
       </div>
-        <img class="invert" src="/_nuxt/static/offerIcons/furniture.webp"></img>
+        <img class="invert" src="/static/offerIcons/furniture.webp"></img>
       <div class="text-lg font-semibold text-white">DOKUMENTACJA TECHNICZNA</div>
     </div>
 
@@ -29,14 +29,14 @@
     <div class="flex flex-col items-center p-4 bg-none rounded-lg shadow-md">
       <div class="text-4xl text-gray-500 mb-2">
       </div>
-        <img class="invert" src="/_nuxt/static/offerIcons/furniture.webp"></img>
+        <img class="invert" src="/static/offerIcons/furniture.webp"></img>
       <div class="text-lg font-semibold text-white">RYSUNKI WYKONAWCZE</div>
     </div>
 
     <!-- Kafelek 5 -->
     <div class="flex flex-col items-center p-4 bg-none rounded-lg shadow-md">
       <div class="text-4xl text-gray-500 mb-2">
-          <img class="invert" src="/_nuxt/static/offerIcons/furniture.webp"></img>
+          <img class="invert" src="/static/offerIcons/furniture.webp"></img>
       </div>
       <div class="text-lg font-semibold text-white">UKŁADY FUNKCJONALNE</div>
     </div>
@@ -44,7 +44,7 @@
     <!-- Kafelek 6 -->
     <div class="flex flex-col items-center p-4 bg-none rounded-lg shadow-md">
       <div class="text-4xl text-gray-500 mb-2">
-          <img class="invert" src="/_nuxt/static/offerIcons/furniture.webp"></img>
+          <img class="invert" src="/static/offerIcons/furniture.webp"></img>
       </div>
       <div class="text-lg font-semibold text-white">WIZUALIZACJE 3D</div>
     </div>
@@ -52,7 +52,7 @@
     <!-- Kafelek 7 -->
     <div class="flex flex-col items-center p-4 bg-none rounded-lg shadow-md">
       <div class="text-4xl text-gray-500 mb-2">
-          <img class="invert" src="/_nuxt/static/offerIcons/furniture.webp"></img>
+          <img class="invert" src="/static/offerIcons/furniture.webp"></img>
       </div>
       <div class="text-lg font-semibold text-white">ARANŻACJE GOTOWYCH PRZESTRZENI</div>
     </div>
@@ -60,7 +60,7 @@
     <!-- Kafelek 8 -->
     <div class="flex flex-col items-center p-4 bg-none rounded-lg shadow-md">
       <div class="text-4xl text-gray-500 mb-2">
-          <img class="invert" src="/_nuxt/static/offerIcons/furniture.webp"></img>
+          <img class="invert" src="/static/offerIcons/furniture.webp"></img>
       </div>
       <div class="text-lg font-semibold text-white">PROJEKT INDYWIDUALNY</div>
     </div>
