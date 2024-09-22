@@ -1,5 +1,4 @@
 // store/example.ts
-import { v4 as uuidv4 } from "uuid";
 import { defineStore } from 'pinia';
 
 export const useExampleStore = defineStore('example', {
@@ -9,10 +8,10 @@ export const useExampleStore = defineStore('example', {
         projects: [
           {
             id: "gabinet cienny",
-            title: "Google Health Platform",
+            title: "Gabinet cienny",
             category: "gabinet",
             img: "/static/projects/gabinet-ciemny/1.webp",
-            tag: "kuchnia",
+            tag: "gabinet",
             objectivesDetails:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
             projectImages: [
@@ -28,7 +27,7 @@ export const useExampleStore = defineStore('example', {
             title: "korytarz glamour",
             category: "korytarz",
             img: "/static/projects/korytarz-glam/1.webp",
-            tag: "UI / Frontend",
+            tag: "korytarz",
             objectivesDetails:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
             projectImages: [
@@ -42,7 +41,7 @@ export const useExampleStore = defineStore('example', {
             title: "kuchnia zielona",
             category: "kuchnia",
             img: "/static/projects/kuchnia-zielona/1.webp",
-            tag: "UI / Frontend",
+            tag: "kuchnia",
             objectivesDetails:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
             projectImages: [
@@ -53,11 +52,11 @@ export const useExampleStore = defineStore('example', {
             projectDetails: [],
           },
           {
-            id: "lazienka natural",
-            title: "lazienka natural",
-            category: "lazienka",
+            id: "łazienka natural",
+            title: "łazienka natural",
+            category: "łazienka",
             img: "/static/projects/lazienka-natural/1.webp",
-            tag: "Web / Frontend",
+            tag: "łazienka",
             objectivesDetails:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
             projectImages: [
@@ -73,7 +72,7 @@ export const useExampleStore = defineStore('example', {
             title: "sadowa dom",
             category: "dom",
             img: "/static/projects/sadowa-dom/1.webp",
-            tag: "Web / Frontend",
+            tag: "dom",
             objectivesDetails:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
             projectImages: [
@@ -90,7 +89,7 @@ export const useExampleStore = defineStore('example', {
             title: "wiosenna dom",
             category: "dom",
             img: "/static/projects/wiosenna-dom/1.webp",
-            tag: "Web / Frontend",
+            tag: "dom",
             objectivesDetails:
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
             projectImages: [
