@@ -1,4 +1,5 @@
 <script>
+import feather from "feather-icons";
 export default {
   props: {
     select: {
@@ -24,12 +25,15 @@ export default {
   data() {
     return {
       showOptions: false,
-      selectedOption: "wszystkie",
+      selectedOption: null, // Zmienione na null
     };
   },
   computed: {
     filteredOptions() {
       return this.selectOptions.filter(option => option !== this.selectedOption);
+    },
+    displayText() {
+      return this.selectedOption || "Wybierz kategorię";
     },
   },
   methods: {
@@ -42,6 +46,14 @@ export default {
       this.$emit('dropChange', option === "wszystkie" ? "" : option);
     },
   },
+  mounted() {
+    // Inicjalizacja ikon po zamontowaniu komponentu
+    feather.replace();
+  },
+  updated() {
+    // Aktualizacja ikon po każdej zmianie, gdy DOM się zmienia
+    feather.replace();
+  },
 };
 </script>
 
@@ -49,7 +61,8 @@ export default {
   <div class="filter-container">
     <div class="options-container">
       <button @click="toggleOptions" class="filter-option main-option bg-gradient">
-        {{ selectedOption }}
+        <i class="inline mr-2 w-[25px]" data-feather="search"></i>
+        {{ displayText }} 
       </button>
       <div v-if="showOptions" class="dropdown-options">
         <button

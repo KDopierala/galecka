@@ -117,11 +117,11 @@ export default {
             <!-- Slider controls -->
             <button @click="prevSlide"
               class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
-              &#8592;
+              <i data-feather="chevron-left"></i>
             </button>
             <button @click="nextSlide"
               class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
-              &#8594;
+              <i data-feather="chevron-right"></i>
             </button>
           </div>
         </div>

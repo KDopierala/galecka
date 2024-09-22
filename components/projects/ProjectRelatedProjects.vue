@@ -34,8 +34,7 @@ export default {
     <p
       class="
         font-general-regular
-        text-primary-dark
-        dark:text-primary-light
+        text-white
         text-3xl
         font-bold
         mb-10

@@ -34,9 +34,9 @@ export default {
           sm:text-xl
           bg-gradient
         "
-        aria-label="More Projects"
+        aria-label="Wszystkie projekty"
       >
-        <Button title="More Projects" />
+        <Button title="Wszystkie projekty" />
       </NuxtLink>
     </div>
     <AppOpinions />

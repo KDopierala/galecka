@@ -17,5 +17,6 @@ export default defineNuxtConfig({
   ],
   plugins: [
     { src: '~/plugins/vue-compare-image.js', mode: 'client' },
+    { src: '~/plugins/aos.client.ts', mode: 'client' },
   ],
 })

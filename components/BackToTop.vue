@@ -10,7 +10,7 @@ export default {
   },
   computed: {
     isScrolled() {
-      return this.userScrollPosition > 100;
+      return this.userScrollPosition > 800;
     },
   },
   mounted() {
@@ -51,8 +51,7 @@ export default {
         cursor-pointer
         flex
         p-2
-        bg-indigo-500
-        hover:bg-indigo-600
+        bg-gradient
         text-white
         items-center
         hover:shadow-sm
