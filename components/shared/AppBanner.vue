@@ -18,9 +18,9 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import feather from "feather-icons";
 
 const slides = ref([
-  { image: '/static/hero/1.png' },
-  { image: '/static/hero/2.png' },
-  { image: '/static/hero/3.png' }
+  { image: '/static/hero/1.webp' },
+  { image: '/static/hero/2.webp' },
+  { image: '/static/hero/3.webp' }
 ])
 
 const currentIndex = ref(0)
